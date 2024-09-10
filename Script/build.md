@@ -1,6 +1,7 @@
 Scripts of building [speex][] and [ogg][] for iOS and OS X.
 
-1.在脚本目录下执行./build_speex.sh
+### 编译：
+1.在脚本目录下执行
 ```sh
 $ ./build_speex.sh
 ```
@@ -8,8 +9,8 @@ $ ./build_speex.sh
 
 ### 报错处理：
 
-找不到符号speex_decode,speex_decode_stereo。需要禁用DISABLE_FLOAT_API宏。
-解决方法，speex 源码找到configure.ac文件，搜索DISABLE_FLOAT_API，按照下面代码修改
+找不到符号speex_decode，speex_decode_stereo。需要禁用DISABLE_FLOAT_API宏。
+解决方法：speex 源码找到configure.ac文件，搜索DISABLE_FLOAT_API，按照下面代码修改
 
 ```sh
 AC_ARG_ENABLE(float-api, [  --disable-float-api     Disable the floating-point API],

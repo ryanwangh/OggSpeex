@@ -3,6 +3,11 @@
 
 ### 代码来自[SFBAudioEngine](https://github.com/sbooth/SFBAudioEngine)，因为只需要 ogg speex 播放，不需要其他格式，故从SFBAudioEngine中只提取了这部分
 
+### pod 导入
+```sh
+pod 'LBSpeex', :path => '../LBSpeex/'
+```
+
 ### [ogg speex 静态库编译](https://github.com/ryanwangh/OggSpeex/blob/main/Script/build.md)
 
 
