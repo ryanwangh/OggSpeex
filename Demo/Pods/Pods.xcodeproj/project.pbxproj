@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018934488A9B8383AC53671EF7FB8EED /* SFBCStringForOSType.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F736023652782CCF204FA318EAC1A72 /* SFBCStringForOSType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		037845797180C6A28B21FF1327A56A75 /* SFBAudioFileWrapper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8598909C02BFBDAA833AF789EC86E8D6 /* SFBAudioFileWrapper.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		0F62AB489405C7A032DA305A331B5822 /* NSData+SFBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B687122273CE836E3AFAA1599F40CF6F /* NSData+SFBExtensions.m */; };
+		1069D41941BDC870108524F7BAB14374 /* SFBCAExtAudioFile.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E4D9E54DA323DBC72562DE986137F8F9 /* SFBCAExtAudioFile.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		1186177AAF776D3533E4A1029C6D7C46 /* AVAudioFormat+SFBFormatTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA54A2516B3D9262F388F11BDE68EF /* AVAudioFormat+SFBFormatTransformation.m */; };
+		1F8EFAC89C15AA2A883C0B9924173C56 /* SFBFileInputSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4EF43DA86600716B91D9F18B803AB5 /* SFBFileInputSource.m */; };
+		1FF3369109659AECDB7185CDDE1857A7 /* SFBInputSource+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B1C5D541E0CAFF332039DD3296A24E /* SFBInputSource+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25BC24665F76BC7932D460909C726404 /* SFBDataInputSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A70E5D6DD4BD69207A10F711B7FA40 /* SFBDataInputSource.m */; };
+		2DFEFB051DE29DC129676FE5D49165D7 /* SFBCFWrapper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65BBCBB904903EDA75970F376290BBED /* SFBCFWrapper.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		312CC13B08877E4C5F8212DF644CF271 /* SFBDataInputSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2704994363E9FFEF88DF60B5AF325BC7 /* SFBDataInputSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36107A7411FA1B58D714EF123206BD97 /* SFBRingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE6962C07D426A0B381D1FAD46608BE8 /* SFBRingBuffer.cpp */; };
+		377D0D424C74FADB3B6D68A40AEFDAD5 /* SFBAudioDecoder+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B4F40D98800630B5D72D361E970A8E /* SFBAudioDecoder+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3DB9B75629014700423FA4876C18C05D /* SFBCAAudioConverter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9382AA8048D846BE82C6D2F7094794A5 /* SFBCAAudioConverter.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		4887529AC105AEE813E1DCAE7B0199D7 /* SFBCAAudioStream.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8620EBEC3075474CBC9BEE61DA55516A /* SFBCAAudioStream.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		4CE692E67CC3FD6E4550D1DB3D86D63E /* AVAudioChannelLayout+SFBChannelLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = E24531E0878D15D9AA9656D2C25B5E1F /* AVAudioChannelLayout+SFBChannelLabels.m */; };
+		4CFC41C3AAF9511F13BEF9C85E0C0649 /* SFBScopeGuard.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4F77240C01FEC67323A941DDC2FC732 /* SFBScopeGuard.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		580F3949E8EC7779E3F18994FC6DD55D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		58539EBF1D53AA516AA0B6242DEAD9F8 /* SFBAudioRingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33C11C9327C3029420C19759C77E1F6A /* SFBAudioRingBuffer.cpp */; };
+		5CDD8FC935569CBB8A9904452C27B3B3 /* SFBCABufferList.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2607F97512BAE404E09637B5561D60D7 /* SFBCABufferList.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F9C1E495A4FC309DFC61CB8DD4364F4 /* SFBCARingBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 39EE675B0CE9E100ACC82CED12F57A6B /* SFBCARingBuffer.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		6335B6337FBBAE2507B67BB338E5321D /* SFBDispatchSemaphore.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C65D7D94E333AE8DC9EA7479EE69F371 /* SFBDispatchSemaphore.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		675216CC128C43E357DF3F3C34CBDAFC /* NSError+SFBURLPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF790D45DC05A3EAFC6D4C35CE0A0F8 /* NSError+SFBURLPresentation.m */; };
+		6B5F3E48D9A517F15DACE611A8CE3713 /* SFBCAAudioSystemObject.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F9DC405071968F4907CA27C3E7286FAD /* SFBCAAudioSystemObject.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C8885E3021559E645EFDE60DA78F312 /* NSError+SFBURLPresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = B5DD1A2ADDC5913DDC6077334A71419C /* NSError+SFBURLPresentation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		771AA5FC5794326AFC9E5522F2EE8649 /* SFBAudioDecoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2DC37298B51998E2A6CB5AF7CFE1A3 /* SFBAudioDecoding.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79315B639F977E718D41F0067B93289B /* SFBFileContentsInputSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FD295BF825D9356DC9879AA37723B /* SFBFileContentsInputSource.m */; };
+		7ADFB0E0006F6DF4A0F531D38305105C /* SFBCAStreamBasicDescription.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3B3B0EFD88471628DF9638CA5ECCA465 /* SFBCAStreamBasicDescription.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		7B48E28FFD545D319FCFCC9355B4ECA7 /* SFBAudioUnitRecorder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7115532E3F1117DF1A000CFFF1C40F7F /* SFBAudioUnitRecorder.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		7B8758E9D497FC2B4FE58C31562D7D3F /* Pods-OggSpeexDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5B30256A5C7EFA1222BD553F1C86B8 /* Pods-OggSpeexDemo-dummy.m */; };
+		7C88E7AE983F76E1C4E0FAA5223D8BFC /* SFBAudioPlayerNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 36138F37839EE1B0601BB6E04F694414 /* SFBAudioPlayerNode.mm */; };
+		7D29A36E251D042B3B752FBA2233A61C /* SFBAudioDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2FF4307393F0B174A86C3767363342 /* SFBAudioDecoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7DF7D0DC46CD01C01A4047BF0DB63A08 /* SFBCARingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B9DE79803F18BC398A66D9C402EB2 /* SFBCARingBuffer.cpp */; };
+		82E714DA25B7F9C79959B0A298B10D6D /* SFBMemoryMappedFileInputSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5ABB6E406F298DC5F81E71BCCCE745 /* SFBMemoryMappedFileInputSource.m */; };
+		883A3667A7F33B4C9898BFF059496C71 /* LBSpeex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F31D6CE2FA838288FE9201EE183F62 /* LBSpeex-dummy.m */; };
+		8B7EFF1950917DAC41F9E8523F73B853 /* SFBCABufferList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95B7311F7168165DB1AA15EE84B4F46D /* SFBCABufferList.cpp */; };
+		8FF9D93ABF5B9FAF330930D229862AA4 /* SFBCAException.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CE43E1C6A7F03F9662473D155ADC856E /* SFBCAException.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		9110CECD1EDB3093C634B897A86C5DAD /* LBPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8145E105EB97C5ABD6FD339D50C4311B /* LBPlayerManager.m */; };
+		9135B8EF11A89396E674A100E90F46EF /* AVAudioPCMBuffer+SFBBufferUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF3C2AD87453D04AC1DA140F4544232 /* AVAudioPCMBuffer+SFBBufferUtilities.m */; };
+		97001D9F5B99D78E4989632A2F03563E /* LBSpeex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECB6E0896C9D8FF303A74F182F6742F /* LBSpeex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AE399489ECF2DB52F2B8D9948F93EA2 /* AVAudioFormat+SFBFormatTransformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E49F9B853A99E2594962D52572263CB /* AVAudioFormat+SFBFormatTransformation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9CE2F283F1A17BC6DD87A10ECE28D0DE /* SFBInputSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBAF09E56827BB7A8921E36B52B823 /* SFBInputSource.m */; };
+		9D37FC76208259E4DA9FEDDC459977F3 /* SFBTernaryTruthValue.h in Headers */ = {isa = PBXBuildFile; fileRef = F52775691876956F368A2F76D055F637 /* SFBTernaryTruthValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9EDA8CF32FE236DC712D00838AB42B30 /* SFBOggSpeexDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A9DF7D133A0E6E8E428FDB4E1D7F31 /* SFBOggSpeexDecoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A08D86A5F3C7500CCEFFD6D78E9FDFBF /* SFBExtAudioFileWrapper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 12101B95EBCE54B07E62029696C8E98D /* SFBExtAudioFileWrapper.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4C82F73D4C24A7BC9FD901E0864E583 /* SFBTimeUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8C3228C41F649E41BB384237108590D /* SFBTimeUtilities.cpp */; };
+		A602424C1D88EF8EB5416ECC931F8CBD /* SFBCAAudioFile.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8D22EAC35C44C9AF7A6B386F1A32B9DD /* SFBCAAudioFile.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7236BFB48C0D99FBFCF7A92DF25515F /* SFBAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C14F0671DEB2AD8BF68CD198102247 /* SFBAudioDecoder.m */; };
+		A966BE28167B609145B24E73736C12DF /* SFBRingBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F4ED05B353BD56A05DBBC9E8FCC3C394 /* SFBRingBuffer.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA4BDE516CA74CBCCA940E6DAFD26CE9 /* SFBCAChannelLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68FC27F4324FB683EA073F57F2E208DA /* SFBCAChannelLayout.cpp */; };
+		AFACFC62302998F00D66BDDBEC853B2D /* SFBAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 84151BE4A5D96F98A071C4746420310D /* SFBAudioPlayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B1FE40044096AEA56B710C5A56458824 /* SFBByteStream.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C11C7BB91D2CDF71A91D61E433B14A16 /* SFBByteStream.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		B2C4505DC6C3BACFDDFB0C76210BC4CA /* SFBCAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4D7B50D2165BADAC0461A7293D2D344 /* SFBCAStreamBasicDescription.cpp */; };
+		B36F263004D91C97F963CF073FBCDBBB /* SFBCAPropertyAddress.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7A8FD785AB8FF35A58EE0F3D8F24B122 /* SFBCAPropertyAddress.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA1CCA5DB51A815CF6EA8CC26543F3FD /* SFBCAAudioFormat.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D9613FE85341D8DFDF66FCD590C8AFE8 /* SFBCAAudioFormat.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA71D35A3B68F4CCECB78E2E654205D5 /* SFBAudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CE73E2A64844B79E49ACFBE05E210A6 /* SFBAudioPlayer.mm */; };
+		BF317AC584A2138ED8411548D30B53DB /* SFBMemoryMappedFileInputSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 90DEAD116AD722F9BA857CB3F2693C90 /* SFBMemoryMappedFileInputSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3997EE22E3C65497C581E164A271C91 /* SFBCAAUGraph.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CE359CBB73EF1657047F70A3197DE5BA /* SFBCAAUGraph.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8B55EDBA9DBB5E944134B7A822DAA70 /* SFBFileInputSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 94C77957FD598601E2E6150A839F6CCA /* SFBFileInputSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8DDD9475C4585F2874BAB448A835D93 /* SFBTimeUtilities.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1A4701D6BC83C13E6075DB9D80C0CC4F /* SFBTimeUtilities.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA8F6126397E70AE7260A5C41BD8A8C4 /* Pods-OggSpeexDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CAB5E71BD9CD5FB8204DCAAAA859A30 /* Pods-OggSpeexDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBBECCB898C355825B4340C79D5BA87E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D0D6D1EB5B6E7AB16083B6116106FFFA /* SFBInputSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A4E11CE6B5EC0F1292580B6BD5FE9D /* SFBInputSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3F24C8EF12849A3A3A6919296AFF3C1 /* SFBFileContentsInputSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C9AADB6296F3BB12B2045D5A1D9061 /* SFBFileContentsInputSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4CBF27A0C1DBB8CA564FAC577FFD72F /* AVAudioPCMBuffer+SFBBufferUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B25BA2FB87F06B5D2A480FEB9C30344 /* AVAudioPCMBuffer+SFBBufferUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DBD2D8FD87B07D21740A2B3EB88778F2 /* NSData+SFBExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A025BD1660AC48F1DB355DDBFFA383C /* NSData+SFBExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DBDA91FB5BDF317DF403726DA5EB3C91 /* SFBAudioPlayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B1B5FC54066B1A96EBCA746E2EBA2DE /* SFBAudioPlayerNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC221A52B071C3CED6BF55727D8F5B71 /* SFBUnfairLock.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 44E1047DCF67804A1E863FB4AF2AED1B /* SFBUnfairLock.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		E07C90B2C7CCFA01851BB0FF1651A1F6 /* SFBOggSpeexDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C96296C4666C04817F997D553518F4 /* SFBOggSpeexDecoder.m */; };
+		E083CD1E115D1BDAE66E65784BB3AA23 /* SFBCATimeStamp.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2B9A4841E47D6235506B2A175046ECA8 /* SFBCATimeStamp.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		E64C0CA80A215B85680B86B0D48FFAD0 /* SFBAudioRingBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 01F6B970A521F4E49C756C9FBB70816F /* SFBAudioRingBuffer.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		EAC530D241DD4BE6E1E08F5F60A57673 /* SFBCAChannelLayout.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 06D4AFAE2172DCCBF7FBB020C0D043BB /* SFBCAChannelLayout.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE27657DEF198E643F7339B74DDE9B14 /* AVAudioChannelLayout+SFBChannelLabels.h in Headers */ = {isa = PBXBuildFile; fileRef = 73CA7DC910D2085D70465FF597DB57DB /* AVAudioChannelLayout+SFBChannelLabels.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F20D85531F4EC916BBB4F016EDA9E184 /* SFBCAAudioObject.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6845A4C98FDDB1C2ABE04AF53771B180 /* SFBCAAudioObject.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		F80D53B95F4FD0D9CC539BECB37DBF46 /* SFBCAAudioDevice.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BDB85340ABAF53A7318106C8BDC92FAD /* SFBCAAudioDevice.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		F8160FA0C7ED02E201DE1BF4756898ED /* SFBAudioEngineTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A11D8A59214B8CD5612B2B1BB946B5C3 /* SFBAudioEngineTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F892003BA51A83215B41932835AE9249 /* SFBPCMDecoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8806E26F5BC92654C22CE6CD57DC73 /* SFBPCMDecoding.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F91A916E6D83BA618AA17FE8E6BD2423 /* LBPlayerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B0832B46DC5294733749A96D920AB3B2 /* LBPlayerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7141D41213F1A7979C979C5BC6E9C25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FD7E09F6850257C850E4812057D742F;
+			remoteInfo = LBSpeex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01F31D6CE2FA838288FE9201EE183F62 /* LBSpeex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LBSpeex-dummy.m"; sourceTree = "<group>"; };
+		01F6B970A521F4E49C756C9FBB70816F /* SFBAudioRingBuffer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBAudioRingBuffer.hpp; sourceTree = "<group>"; };
+		06D4AFAE2172DCCBF7FBB020C0D043BB /* SFBCAChannelLayout.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAChannelLayout.hpp; sourceTree = "<group>"; };
+		0A0B9DE79803F18BC398A66D9C402EB2 /* SFBCARingBuffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = SFBCARingBuffer.cpp; sourceTree = "<group>"; };
+		0D7244A111EF953C6492AEFBFC38EC33 /* speex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = speex.framework; path = Framework/speex.framework; sourceTree = "<group>"; };
+		12101B95EBCE54B07E62029696C8E98D /* SFBExtAudioFileWrapper.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBExtAudioFileWrapper.hpp; sourceTree = "<group>"; };
+		19AAB5DAAC4139ABFE8153C12E1741AD /* Pods-OggSpeexDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OggSpeexDemo"; path = Pods_OggSpeexDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4701D6BC83C13E6075DB9D80C0CC4F /* SFBTimeUtilities.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBTimeUtilities.hpp; sourceTree = "<group>"; };
+		1B25BA2FB87F06B5D2A480FEB9C30344 /* AVAudioPCMBuffer+SFBBufferUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AVAudioPCMBuffer+SFBBufferUtilities.h"; sourceTree = "<group>"; };
+		2607F97512BAE404E09637B5561D60D7 /* SFBCABufferList.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCABufferList.hpp; sourceTree = "<group>"; };
+		2704994363E9FFEF88DF60B5AF325BC7 /* SFBDataInputSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBDataInputSource.h; sourceTree = "<group>"; };
+		283229AC13885C03625E6F83B7221EF8 /* LBSpeex.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LBSpeex.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2B9A4841E47D6235506B2A175046ECA8 /* SFBCATimeStamp.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCATimeStamp.hpp; sourceTree = "<group>"; };
+		32014566D4FB5E36C0EDABE2EA2B3313 /* LBSpeex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LBSpeex.release.xcconfig; sourceTree = "<group>"; };
+		33C11C9327C3029420C19759C77E1F6A /* SFBAudioRingBuffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = SFBAudioRingBuffer.cpp; sourceTree = "<group>"; };
+		36138F37839EE1B0601BB6E04F694414 /* SFBAudioPlayerNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SFBAudioPlayerNode.mm; sourceTree = "<group>"; };
+		37CA54A2516B3D9262F388F11BDE68EF /* AVAudioFormat+SFBFormatTransformation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AVAudioFormat+SFBFormatTransformation.m"; sourceTree = "<group>"; };
+		39A70E5D6DD4BD69207A10F711B7FA40 /* SFBDataInputSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFBDataInputSource.m; sourceTree = "<group>"; };
+		39EE675B0CE9E100ACC82CED12F57A6B /* SFBCARingBuffer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCARingBuffer.hpp; sourceTree = "<group>"; };
+		3B3B0EFD88471628DF9638CA5ECCA465 /* SFBCAStreamBasicDescription.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAStreamBasicDescription.hpp; sourceTree = "<group>"; };
+		3D2FD295BF825D9356DC9879AA37723B /* SFBFileContentsInputSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFBFileContentsInputSource.m; sourceTree = "<group>"; };
+		3F736023652782CCF204FA318EAC1A72 /* SFBCStringForOSType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBCStringForOSType.h; sourceTree = "<group>"; };
+		40C14F0671DEB2AD8BF68CD198102247 /* SFBAudioDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFBAudioDecoder.m; sourceTree = "<group>"; };
+		44E1047DCF67804A1E863FB4AF2AED1B /* SFBUnfairLock.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBUnfairLock.hpp; sourceTree = "<group>"; };
+		4CAB5E71BD9CD5FB8204DCAAAA859A30 /* Pods-OggSpeexDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OggSpeexDemo-umbrella.h"; sourceTree = "<group>"; };
+		65BBCBB904903EDA75970F376290BBED /* SFBCFWrapper.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCFWrapper.hpp; sourceTree = "<group>"; };
+		6683497C78270E2A500E3EB209AC5B9F /* LBSpeex-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LBSpeex-Info.plist"; sourceTree = "<group>"; };
+		66C9AADB6296F3BB12B2045D5A1D9061 /* SFBFileContentsInputSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBFileContentsInputSource.h; sourceTree = "<group>"; };
+		6845A4C98FDDB1C2ABE04AF53771B180 /* SFBCAAudioObject.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAAudioObject.hpp; sourceTree = "<group>"; };
+		68FC27F4324FB683EA073F57F2E208DA /* SFBCAChannelLayout.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = SFBCAChannelLayout.cpp; sourceTree = "<group>"; };
+		6A38FB29BEAA39F402AAF3FD1C931D8A /* Pods-OggSpeexDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OggSpeexDemo-frameworks.sh"; sourceTree = "<group>"; };
+		6F2DC37298B51998E2A6CB5AF7CFE1A3 /* SFBAudioDecoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBAudioDecoding.h; sourceTree = "<group>"; };
+		7115532E3F1117DF1A000CFFF1C40F7F /* SFBAudioUnitRecorder.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBAudioUnitRecorder.hpp; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73A4E11CE6B5EC0F1292580B6BD5FE9D /* SFBInputSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBInputSource.h; sourceTree = "<group>"; };
+		73CA7DC910D2085D70465FF597DB57DB /* AVAudioChannelLayout+SFBChannelLabels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AVAudioChannelLayout+SFBChannelLabels.h"; sourceTree = "<group>"; };
+		7A8FD785AB8FF35A58EE0F3D8F24B122 /* SFBCAPropertyAddress.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAPropertyAddress.hpp; sourceTree = "<group>"; };
+		7B5ABB6E406F298DC5F81E71BCCCE745 /* SFBMemoryMappedFileInputSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFBMemoryMappedFileInputSource.m; sourceTree = "<group>"; };
+		7B8806E26F5BC92654C22CE6CD57DC73 /* SFBPCMDecoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBPCMDecoding.h; sourceTree = "<group>"; };
+		7CE73E2A64844B79E49ACFBE05E210A6 /* SFBAudioPlayer.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SFBAudioPlayer.mm; sourceTree = "<group>"; };
+		7E49F9B853A99E2594962D52572263CB /* AVAudioFormat+SFBFormatTransformation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AVAudioFormat+SFBFormatTransformation.h"; sourceTree = "<group>"; };
+		7FE5A8F06BFF69E49F9A7E4FA2939E87 /* Pods-OggSpeexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OggSpeexDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8145E105EB97C5ABD6FD339D50C4311B /* LBPlayerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LBPlayerManager.m; path = Source/LBPlayerManager.m; sourceTree = "<group>"; };
+		84151BE4A5D96F98A071C4746420310D /* SFBAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBAudioPlayer.h; sourceTree = "<group>"; };
+		8598909C02BFBDAA833AF789EC86E8D6 /* SFBAudioFileWrapper.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBAudioFileWrapper.hpp; sourceTree = "<group>"; };
+		8620EBEC3075474CBC9BEE61DA55516A /* SFBCAAudioStream.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAAudioStream.hpp; sourceTree = "<group>"; };
+		89C96296C4666C04817F997D553518F4 /* SFBOggSpeexDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFBOggSpeexDecoder.m; sourceTree = "<group>"; };
+		8B1B5FC54066B1A96EBCA746E2EBA2DE /* SFBAudioPlayerNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBAudioPlayerNode.h; sourceTree = "<group>"; };
+		8D22EAC35C44C9AF7A6B386F1A32B9DD /* SFBCAAudioFile.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAAudioFile.hpp; sourceTree = "<group>"; };
+		8E2FF4307393F0B174A86C3767363342 /* SFBAudioDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBAudioDecoder.h; sourceTree = "<group>"; };
+		8ECB6E0896C9D8FF303A74F182F6742F /* LBSpeex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LBSpeex-umbrella.h"; sourceTree = "<group>"; };
+		90DEAD116AD722F9BA857CB3F2693C90 /* SFBMemoryMappedFileInputSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBMemoryMappedFileInputSource.h; sourceTree = "<group>"; };
+		9382AA8048D846BE82C6D2F7094794A5 /* SFBCAAudioConverter.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAAudioConverter.hpp; sourceTree = "<group>"; };
+		94C77957FD598601E2E6150A839F6CCA /* SFBFileInputSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBFileInputSource.h; sourceTree = "<group>"; };
+		95B7311F7168165DB1AA15EE84B4F46D /* SFBCABufferList.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = SFBCABufferList.cpp; sourceTree = "<group>"; };
+		9A025BD1660AC48F1DB355DDBFFA383C /* NSData+SFBExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+SFBExtensions.h"; sourceTree = "<group>"; };
+		9A4EF43DA86600716B91D9F18B803AB5 /* SFBFileInputSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFBFileInputSource.m; sourceTree = "<group>"; };
+		9D1C5C71FA77063910E9043F075AA16A /* LBSpeex */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LBSpeex; path = LBSpeex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F43E7825246C43C277B32A9692BE7D2 /* LBSpeex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LBSpeex-prefix.pch"; sourceTree = "<group>"; };
+		A11D8A59214B8CD5612B2B1BB946B5C3 /* SFBAudioEngineTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBAudioEngineTypes.h; sourceTree = "<group>"; };
+		A4D7B50D2165BADAC0461A7293D2D344 /* SFBCAStreamBasicDescription.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = SFBCAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		A9F780D4953DDBF528253564E7BBA273 /* Pods-OggSpeexDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OggSpeexDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B0832B46DC5294733749A96D920AB3B2 /* LBPlayerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LBPlayerManager.h; path = Source/LBPlayerManager.h; sourceTree = "<group>"; };
+		B571E56D67E7E6CAF76C5796C888DC12 /* LBSpeex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LBSpeex.debug.xcconfig; sourceTree = "<group>"; };
+		B5DD1A2ADDC5913DDC6077334A71419C /* NSError+SFBURLPresentation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+SFBURLPresentation.h"; sourceTree = "<group>"; };
+		B687122273CE836E3AFAA1599F40CF6F /* NSData+SFBExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+SFBExtensions.m"; sourceTree = "<group>"; };
+		BA5B30256A5C7EFA1222BD553F1C86B8 /* Pods-OggSpeexDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OggSpeexDemo-dummy.m"; sourceTree = "<group>"; };
+		BDB85340ABAF53A7318106C8BDC92FAD /* SFBCAAudioDevice.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAAudioDevice.hpp; sourceTree = "<group>"; };
+		C071E832C92CF52769621C25FA044B32 /* ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ogg.framework; path = Framework/ogg.framework; sourceTree = "<group>"; };
+		C11C7BB91D2CDF71A91D61E433B14A16 /* SFBByteStream.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBByteStream.hpp; sourceTree = "<group>"; };
+		C4F77240C01FEC67323A941DDC2FC732 /* SFBScopeGuard.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBScopeGuard.hpp; sourceTree = "<group>"; };
+		C64FE4B4EC18F91FDC7B08193DD17107 /* Pods-OggSpeexDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OggSpeexDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		C65D7D94E333AE8DC9EA7479EE69F371 /* SFBDispatchSemaphore.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBDispatchSemaphore.hpp; sourceTree = "<group>"; };
+		C8A9DF7D133A0E6E8E428FDB4E1D7F31 /* SFBOggSpeexDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBOggSpeexDecoder.h; sourceTree = "<group>"; };
+		C9EBAF09E56827BB7A8921E36B52B823 /* SFBInputSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFBInputSource.m; sourceTree = "<group>"; };
+		CD750D2B39A987447A60C997DE0AB294 /* Pods-OggSpeexDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OggSpeexDemo-Info.plist"; sourceTree = "<group>"; };
+		CE359CBB73EF1657047F70A3197DE5BA /* SFBCAAUGraph.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAAUGraph.hpp; sourceTree = "<group>"; };
+		CE43E1C6A7F03F9662473D155ADC856E /* SFBCAException.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAException.hpp; sourceTree = "<group>"; };
+		D013CA2EFAC502DBB7D3AC4577EC9DA7 /* LBSpeex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LBSpeex.modulemap; sourceTree = "<group>"; };
+		D9613FE85341D8DFDF66FCD590C8AFE8 /* SFBCAAudioFormat.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAAudioFormat.hpp; sourceTree = "<group>"; };
+		E24531E0878D15D9AA9656D2C25B5E1F /* AVAudioChannelLayout+SFBChannelLabels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AVAudioChannelLayout+SFBChannelLabels.m"; sourceTree = "<group>"; };
+		E4D9E54DA323DBC72562DE986137F8F9 /* SFBCAExtAudioFile.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAExtAudioFile.hpp; sourceTree = "<group>"; };
+		E6B1C5D541E0CAFF332039DD3296A24E /* SFBInputSource+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFBInputSource+Internal.h"; sourceTree = "<group>"; };
+		E89AEBDAA04B0DB2CFF5A6761964688F /* Pods-OggSpeexDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OggSpeexDemo.modulemap"; sourceTree = "<group>"; };
+		E8C3228C41F649E41BB384237108590D /* SFBTimeUtilities.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = SFBTimeUtilities.cpp; sourceTree = "<group>"; };
+		EC9DA466DB2A5F684BF7BA67018E6649 /* Pods-OggSpeexDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OggSpeexDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4ED05B353BD56A05DBBC9E8FCC3C394 /* SFBRingBuffer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBRingBuffer.hpp; sourceTree = "<group>"; };
+		F52775691876956F368A2F76D055F637 /* SFBTernaryTruthValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBTernaryTruthValue.h; sourceTree = "<group>"; };
+		F6B4F40D98800630B5D72D361E970A8E /* SFBAudioDecoder+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFBAudioDecoder+Internal.h"; sourceTree = "<group>"; };
+		F9DC405071968F4907CA27C3E7286FAD /* SFBCAAudioSystemObject.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = SFBCAAudioSystemObject.hpp; sourceTree = "<group>"; };
+		FCF3C2AD87453D04AC1DA140F4544232 /* AVAudioPCMBuffer+SFBBufferUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPCMBuffer+SFBBufferUtilities.m"; sourceTree = "<group>"; };
+		FE6962C07D426A0B381D1FAD46608BE8 /* SFBRingBuffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = SFBRingBuffer.cpp; sourceTree = "<group>"; };
+		FFF790D45DC05A3EAFC6D4C35CE0A0F8 /* NSError+SFBURLPresentation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+SFBURLPresentation.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CEA96BE186D0BB1D0CF1CD5A00DF23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580F3949E8EC7779E3F18994FC6DD55D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9951BE64C3C3E01E5A6B933E52411895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBECCB898C355825B4340C79D5BA87E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		157F6C0BE4C18D0110EFFBAC5C50F83C /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				2704994363E9FFEF88DF60B5AF325BC7 /* SFBDataInputSource.h */,
+				39A70E5D6DD4BD69207A10F711B7FA40 /* SFBDataInputSource.m */,
+				66C9AADB6296F3BB12B2045D5A1D9061 /* SFBFileContentsInputSource.h */,
+				3D2FD295BF825D9356DC9879AA37723B /* SFBFileContentsInputSource.m */,
+				94C77957FD598601E2E6150A839F6CCA /* SFBFileInputSource.h */,
+				9A4EF43DA86600716B91D9F18B803AB5 /* SFBFileInputSource.m */,
+				73A4E11CE6B5EC0F1292580B6BD5FE9D /* SFBInputSource.h */,
+				C9EBAF09E56827BB7A8921E36B52B823 /* SFBInputSource.m */,
+				E6B1C5D541E0CAFF332039DD3296A24E /* SFBInputSource+Internal.h */,
+				90DEAD116AD722F9BA857CB3F2693C90 /* SFBMemoryMappedFileInputSource.h */,
+				7B5ABB6E406F298DC5F81E71BCCCE745 /* SFBMemoryMappedFileInputSource.m */,
+			);
+			name = Input;
+			path = Input;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		68B5F9C03817717C6317EA0108DFA3A3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				283229AC13885C03625E6F83B7221EF8 /* LBSpeex.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6ED2B83187EADA6FF86F381B91C2546F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D1C5C71FA77063910E9043F075AA16A /* LBSpeex */,
+				19AAB5DAAC4139ABFE8153C12E1741AD /* Pods-OggSpeexDemo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ECC75DCC91E4CA71CE49AC93CE2DFDF /* Decode */ = {
+			isa = PBXGroup;
+			children = (
+				8E2FF4307393F0B174A86C3767363342 /* SFBAudioDecoder.h */,
+				40C14F0671DEB2AD8BF68CD198102247 /* SFBAudioDecoder.m */,
+				F6B4F40D98800630B5D72D361E970A8E /* SFBAudioDecoder+Internal.h */,
+				6F2DC37298B51998E2A6CB5AF7CFE1A3 /* SFBAudioDecoding.h */,
+				C8A9DF7D133A0E6E8E428FDB4E1D7F31 /* SFBOggSpeexDecoder.h */,
+				89C96296C4666C04817F997D553518F4 /* SFBOggSpeexDecoder.m */,
+				7B8806E26F5BC92654C22CE6CD57DC73 /* SFBPCMDecoding.h */,
+				157F6C0BE4C18D0110EFFBAC5C50F83C /* Input */,
+			);
+			name = Decode;
+			path = Source/Decode;
+			sourceTree = "<group>";
+		};
+		8366A91D44ECC59D730E71C4656BE084 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8598909C02BFBDAA833AF789EC86E8D6 /* SFBAudioFileWrapper.hpp */,
+				01F6B970A521F4E49C756C9FBB70816F /* SFBAudioRingBuffer.hpp */,
+				7115532E3F1117DF1A000CFFF1C40F7F /* SFBAudioUnitRecorder.hpp */,
+				C11C7BB91D2CDF71A91D61E433B14A16 /* SFBByteStream.hpp */,
+				9382AA8048D846BE82C6D2F7094794A5 /* SFBCAAudioConverter.hpp */,
+				BDB85340ABAF53A7318106C8BDC92FAD /* SFBCAAudioDevice.hpp */,
+				8D22EAC35C44C9AF7A6B386F1A32B9DD /* SFBCAAudioFile.hpp */,
+				D9613FE85341D8DFDF66FCD590C8AFE8 /* SFBCAAudioFormat.hpp */,
+				6845A4C98FDDB1C2ABE04AF53771B180 /* SFBCAAudioObject.hpp */,
+				8620EBEC3075474CBC9BEE61DA55516A /* SFBCAAudioStream.hpp */,
+				F9DC405071968F4907CA27C3E7286FAD /* SFBCAAudioSystemObject.hpp */,
+				CE359CBB73EF1657047F70A3197DE5BA /* SFBCAAUGraph.hpp */,
+				2607F97512BAE404E09637B5561D60D7 /* SFBCABufferList.hpp */,
+				06D4AFAE2172DCCBF7FBB020C0D043BB /* SFBCAChannelLayout.hpp */,
+				CE43E1C6A7F03F9662473D155ADC856E /* SFBCAException.hpp */,
+				E4D9E54DA323DBC72562DE986137F8F9 /* SFBCAExtAudioFile.hpp */,
+				7A8FD785AB8FF35A58EE0F3D8F24B122 /* SFBCAPropertyAddress.hpp */,
+				39EE675B0CE9E100ACC82CED12F57A6B /* SFBCARingBuffer.hpp */,
+				3B3B0EFD88471628DF9638CA5ECCA465 /* SFBCAStreamBasicDescription.hpp */,
+				2B9A4841E47D6235506B2A175046ECA8 /* SFBCATimeStamp.hpp */,
+				65BBCBB904903EDA75970F376290BBED /* SFBCFWrapper.hpp */,
+				C65D7D94E333AE8DC9EA7479EE69F371 /* SFBDispatchSemaphore.hpp */,
+				12101B95EBCE54B07E62029696C8E98D /* SFBExtAudioFileWrapper.hpp */,
+				F4ED05B353BD56A05DBBC9E8FCC3C394 /* SFBRingBuffer.hpp */,
+				C4F77240C01FEC67323A941DDC2FC732 /* SFBScopeGuard.hpp */,
+				44E1047DCF67804A1E863FB4AF2AED1B /* SFBUnfairLock.hpp */,
+			);
+			name = include;
+			path = include;
+			sourceTree = "<group>";
+		};
+		86B983C098A398C04558A7F7FEE1EE10 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D013CA2EFAC502DBB7D3AC4577EC9DA7 /* LBSpeex.modulemap */,
+				01F31D6CE2FA838288FE9201EE183F62 /* LBSpeex-dummy.m */,
+				6683497C78270E2A500E3EB209AC5B9F /* LBSpeex-Info.plist */,
+				9F43E7825246C43C277B32A9692BE7D2 /* LBSpeex-prefix.pch */,
+				8ECB6E0896C9D8FF303A74F182F6742F /* LBSpeex-umbrella.h */,
+				B571E56D67E7E6CAF76C5796C888DC12 /* LBSpeex.debug.xcconfig */,
+				32014566D4FB5E36C0EDABE2EA2B3313 /* LBSpeex.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Demo/Pods/Target Support Files/LBSpeex";
+			sourceTree = "<group>";
+		};
+		876A19E5F62EA252F3F75A142054A834 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C071E832C92CF52769621C25FA044B32 /* ogg.framework */,
+				0D7244A111EF953C6492AEFBFC38EC33 /* speex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98D5EA0375D4E286C9CA9F8A82C16CE7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA59C173B04D18955054D43C1C0B4493 /* Pods-OggSpeexDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AF924F812C76E048CABD8881673865DD /* include */ = {
+			isa = PBXGroup;
+			children = (
+				73CA7DC910D2085D70465FF597DB57DB /* AVAudioChannelLayout+SFBChannelLabels.h */,
+				7E49F9B853A99E2594962D52572263CB /* AVAudioFormat+SFBFormatTransformation.h */,
+				1B25BA2FB87F06B5D2A480FEB9C30344 /* AVAudioPCMBuffer+SFBBufferUtilities.h */,
+			);
+			name = include;
+			path = include;
+			sourceTree = "<group>";
+		};
+		B73B51254D94A6F5634958FD9A7623A6 /* CXXAudioUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				33C11C9327C3029420C19759C77E1F6A /* SFBAudioRingBuffer.cpp */,
+				95B7311F7168165DB1AA15EE84B4F46D /* SFBCABufferList.cpp */,
+				68FC27F4324FB683EA073F57F2E208DA /* SFBCAChannelLayout.cpp */,
+				0A0B9DE79803F18BC398A66D9C402EB2 /* SFBCARingBuffer.cpp */,
+				A4D7B50D2165BADAC0461A7293D2D344 /* SFBCAStreamBasicDescription.cpp */,
+				FE6962C07D426A0B381D1FAD46608BE8 /* SFBRingBuffer.cpp */,
+				8366A91D44ECC59D730E71C4656BE084 /* include */,
+			);
+			name = CXXAudioUtilities;
+			path = CXXAudioUtilities;
+			sourceTree = "<group>";
+		};
+		B77A31883B3D036AB0EE4E121A6D0B7B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9A025BD1660AC48F1DB355DDBFFA383C /* NSData+SFBExtensions.h */,
+				B687122273CE836E3AFAA1599F40CF6F /* NSData+SFBExtensions.m */,
+				B5DD1A2ADDC5913DDC6077334A71419C /* NSError+SFBURLPresentation.h */,
+				FFF790D45DC05A3EAFC6D4C35CE0A0F8 /* NSError+SFBURLPresentation.m */,
+				A11D8A59214B8CD5612B2B1BB946B5C3 /* SFBAudioEngineTypes.h */,
+				3F736023652782CCF204FA318EAC1A72 /* SFBCStringForOSType.h */,
+				F52775691876956F368A2F76D055F637 /* SFBTernaryTruthValue.h */,
+				E8C3228C41F649E41BB384237108590D /* SFBTimeUtilities.cpp */,
+				1A4701D6BC83C13E6075DB9D80C0CC4F /* SFBTimeUtilities.hpp */,
+			);
+			name = Util;
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C6EC87B142E9973792AE0A319AE39733 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				84151BE4A5D96F98A071C4746420310D /* SFBAudioPlayer.h */,
+				7CE73E2A64844B79E49ACFBE05E210A6 /* SFBAudioPlayer.mm */,
+				8B1B5FC54066B1A96EBCA746E2EBA2DE /* SFBAudioPlayerNode.h */,
+				36138F37839EE1B0601BB6E04F694414 /* SFBAudioPlayerNode.mm */,
+			);
+			name = Player;
+			path = Source/Player;
+			sourceTree = "<group>";
+		};
+		C9D9607B3A7D435F3C7D1EB89274E1E1 /* LBSpeex */ = {
+			isa = PBXGroup;
+			children = (
+				B0832B46DC5294733749A96D920AB3B2 /* LBPlayerManager.h */,
+				8145E105EB97C5ABD6FD339D50C4311B /* LBPlayerManager.m */,
+				7ECC75DCC91E4CA71CE49AC93CE2DFDF /* Decode */,
+				876A19E5F62EA252F3F75A142054A834 /* Frameworks */,
+				C6EC87B142E9973792AE0A319AE39733 /* Player */,
+				68B5F9C03817717C6317EA0108DFA3A3 /* Pod */,
+				86B983C098A398C04558A7F7FEE1EE10 /* Support Files */,
+				EBF74198F2B8E78212383C63ED655F06 /* Utils */,
+			);
+			name = LBSpeex;
+			path = ../../LBSpeex;
+			sourceTree = "<group>";
+		};
+		CA59C173B04D18955054D43C1C0B4493 /* Pods-OggSpeexDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E89AEBDAA04B0DB2CFF5A6761964688F /* Pods-OggSpeexDemo.modulemap */,
+				EC9DA466DB2A5F684BF7BA67018E6649 /* Pods-OggSpeexDemo-acknowledgements.markdown */,
+				C64FE4B4EC18F91FDC7B08193DD17107 /* Pods-OggSpeexDemo-acknowledgements.plist */,
+				BA5B30256A5C7EFA1222BD553F1C86B8 /* Pods-OggSpeexDemo-dummy.m */,
+				6A38FB29BEAA39F402AAF3FD1C931D8A /* Pods-OggSpeexDemo-frameworks.sh */,
+				CD750D2B39A987447A60C997DE0AB294 /* Pods-OggSpeexDemo-Info.plist */,
+				4CAB5E71BD9CD5FB8204DCAAAA859A30 /* Pods-OggSpeexDemo-umbrella.h */,
+				A9F780D4953DDBF528253564E7BBA273 /* Pods-OggSpeexDemo.debug.xcconfig */,
+				7FE5A8F06BFF69E49F9A7E4FA2939E87 /* Pods-OggSpeexDemo.release.xcconfig */,
+			);
+			name = "Pods-OggSpeexDemo";
+			path = "Target Support Files/Pods-OggSpeexDemo";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DE076EF8FBF09DC94262085AE36DDF41 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6ED2B83187EADA6FF86F381B91C2546F /* Products */,
+				98D5EA0375D4E286C9CA9F8A82C16CE7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE076EF8FBF09DC94262085AE36DDF41 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9D9607B3A7D435F3C7D1EB89274E1E1 /* LBSpeex */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		EBF74198F2B8E78212383C63ED655F06 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FD66974EE3E65BB23286F15AB1DBF5C7 /* AVFAudioExtensions */,
+				B73B51254D94A6F5634958FD9A7623A6 /* CXXAudioUtilities */,
+				B77A31883B3D036AB0EE4E121A6D0B7B /* Util */,
+			);
+			name = Utils;
+			path = Source/Utils;
+			sourceTree = "<group>";
+		};
+		FD66974EE3E65BB23286F15AB1DBF5C7 /* AVFAudioExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				E24531E0878D15D9AA9656D2C25B5E1F /* AVAudioChannelLayout+SFBChannelLabels.m */,
+				37CA54A2516B3D9262F388F11BDE68EF /* AVAudioFormat+SFBFormatTransformation.m */,
+				FCF3C2AD87453D04AC1DA140F4544232 /* AVAudioPCMBuffer+SFBBufferUtilities.m */,
+				AF924F812C76E048CABD8881673865DD /* include */,
+			);
+			name = AVFAudioExtensions;
+			path = AVFAudioExtensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4312D82DB7BBCE1485BBE574C600BA23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8F6126397E70AE7260A5C41BD8A8C4 /* Pods-OggSpeexDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A1666F1D739C598A70E30D3C06EFAF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE27657DEF198E643F7339B74DDE9B14 /* AVAudioChannelLayout+SFBChannelLabels.h in Headers */,
+				9AE399489ECF2DB52F2B8D9948F93EA2 /* AVAudioFormat+SFBFormatTransformation.h in Headers */,
+				D4CBF27A0C1DBB8CA564FAC577FFD72F /* AVAudioPCMBuffer+SFBBufferUtilities.h in Headers */,
+				F91A916E6D83BA618AA17FE8E6BD2423 /* LBPlayerManager.h in Headers */,
+				97001D9F5B99D78E4989632A2F03563E /* LBSpeex-umbrella.h in Headers */,
+				DBD2D8FD87B07D21740A2B3EB88778F2 /* NSData+SFBExtensions.h in Headers */,
+				6C8885E3021559E645EFDE60DA78F312 /* NSError+SFBURLPresentation.h in Headers */,
+				7D29A36E251D042B3B752FBA2233A61C /* SFBAudioDecoder.h in Headers */,
+				377D0D424C74FADB3B6D68A40AEFDAD5 /* SFBAudioDecoder+Internal.h in Headers */,
+				771AA5FC5794326AFC9E5522F2EE8649 /* SFBAudioDecoding.h in Headers */,
+				F8160FA0C7ED02E201DE1BF4756898ED /* SFBAudioEngineTypes.h in Headers */,
+				037845797180C6A28B21FF1327A56A75 /* SFBAudioFileWrapper.hpp in Headers */,
+				AFACFC62302998F00D66BDDBEC853B2D /* SFBAudioPlayer.h in Headers */,
+				DBDA91FB5BDF317DF403726DA5EB3C91 /* SFBAudioPlayerNode.h in Headers */,
+				E64C0CA80A215B85680B86B0D48FFAD0 /* SFBAudioRingBuffer.hpp in Headers */,
+				7B48E28FFD545D319FCFCC9355B4ECA7 /* SFBAudioUnitRecorder.hpp in Headers */,
+				B1FE40044096AEA56B710C5A56458824 /* SFBByteStream.hpp in Headers */,
+				3DB9B75629014700423FA4876C18C05D /* SFBCAAudioConverter.hpp in Headers */,
+				F80D53B95F4FD0D9CC539BECB37DBF46 /* SFBCAAudioDevice.hpp in Headers */,
+				A602424C1D88EF8EB5416ECC931F8CBD /* SFBCAAudioFile.hpp in Headers */,
+				BA1CCA5DB51A815CF6EA8CC26543F3FD /* SFBCAAudioFormat.hpp in Headers */,
+				F20D85531F4EC916BBB4F016EDA9E184 /* SFBCAAudioObject.hpp in Headers */,
+				4887529AC105AEE813E1DCAE7B0199D7 /* SFBCAAudioStream.hpp in Headers */,
+				6B5F3E48D9A517F15DACE611A8CE3713 /* SFBCAAudioSystemObject.hpp in Headers */,
+				C3997EE22E3C65497C581E164A271C91 /* SFBCAAUGraph.hpp in Headers */,
+				5CDD8FC935569CBB8A9904452C27B3B3 /* SFBCABufferList.hpp in Headers */,
+				EAC530D241DD4BE6E1E08F5F60A57673 /* SFBCAChannelLayout.hpp in Headers */,
+				8FF9D93ABF5B9FAF330930D229862AA4 /* SFBCAException.hpp in Headers */,
+				1069D41941BDC870108524F7BAB14374 /* SFBCAExtAudioFile.hpp in Headers */,
+				B36F263004D91C97F963CF073FBCDBBB /* SFBCAPropertyAddress.hpp in Headers */,
+				5F9C1E495A4FC309DFC61CB8DD4364F4 /* SFBCARingBuffer.hpp in Headers */,
+				7ADFB0E0006F6DF4A0F531D38305105C /* SFBCAStreamBasicDescription.hpp in Headers */,
+				E083CD1E115D1BDAE66E65784BB3AA23 /* SFBCATimeStamp.hpp in Headers */,
+				2DFEFB051DE29DC129676FE5D49165D7 /* SFBCFWrapper.hpp in Headers */,
+				018934488A9B8383AC53671EF7FB8EED /* SFBCStringForOSType.h in Headers */,
+				312CC13B08877E4C5F8212DF644CF271 /* SFBDataInputSource.h in Headers */,
+				6335B6337FBBAE2507B67BB338E5321D /* SFBDispatchSemaphore.hpp in Headers */,
+				A08D86A5F3C7500CCEFFD6D78E9FDFBF /* SFBExtAudioFileWrapper.hpp in Headers */,
+				D3F24C8EF12849A3A3A6919296AFF3C1 /* SFBFileContentsInputSource.h in Headers */,
+				C8B55EDBA9DBB5E944134B7A822DAA70 /* SFBFileInputSource.h in Headers */,
+				D0D6D1EB5B6E7AB16083B6116106FFFA /* SFBInputSource.h in Headers */,
+				1FF3369109659AECDB7185CDDE1857A7 /* SFBInputSource+Internal.h in Headers */,
+				BF317AC584A2138ED8411548D30B53DB /* SFBMemoryMappedFileInputSource.h in Headers */,
+				9EDA8CF32FE236DC712D00838AB42B30 /* SFBOggSpeexDecoder.h in Headers */,
+				F892003BA51A83215B41932835AE9249 /* SFBPCMDecoding.h in Headers */,
+				A966BE28167B609145B24E73736C12DF /* SFBRingBuffer.hpp in Headers */,
+				4CFC41C3AAF9511F13BEF9C85E0C0649 /* SFBScopeGuard.hpp in Headers */,
+				9D37FC76208259E4DA9FEDDC459977F3 /* SFBTernaryTruthValue.h in Headers */,
+				C8DDD9475C4585F2874BAB448A835D93 /* SFBTimeUtilities.hpp in Headers */,
+				DC221A52B071C3CED6BF55727D8F5B71 /* SFBUnfairLock.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3FD7E09F6850257C850E4812057D742F /* LBSpeex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 341146165FE393B6038759156EC6B9C1 /* Build configuration list for PBXNativeTarget "LBSpeex" */;
+			buildPhases = (
+				5A1666F1D739C598A70E30D3C06EFAF1 /* Headers */,
+				8CAECBA323980DA255D4AD55C66F5A25 /* Sources */,
+				7CEA96BE186D0BB1D0CF1CD5A00DF23B /* Frameworks */,
+				DA4895B1C632ACD8D87C14EAD05AEA19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBSpeex;
+			productName = LBSpeex;
+			productReference = 9D1C5C71FA77063910E9043F075AA16A /* LBSpeex */;
+			productType = "com.apple.product-type.framework";
+		};
+		F134F95C16E7D8DCD3BC829C2B923370 /* Pods-OggSpeexDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CB13BB4B3A486453B8BD01B01E68B15 /* Build configuration list for PBXNativeTarget "Pods-OggSpeexDemo" */;
+			buildPhases = (
+				4312D82DB7BBCE1485BBE574C600BA23 /* Headers */,
+				596B252C5F6C3B85ED2426A830913AD3 /* Sources */,
+				9951BE64C3C3E01E5A6B933E52411895 /* Frameworks */,
+				0C9653AD00EEEB94F1A42ADB350A849B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46F563C842F8E7D3DFEF7BFCB669DD4D /* PBXTargetDependency */,
+			);
+			name = "Pods-OggSpeexDemo";
+			productName = Pods_OggSpeexDemo;
+			productReference = 19AAB5DAAC4139ABFE8153C12E1741AD /* Pods-OggSpeexDemo */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6ED2B83187EADA6FF86F381B91C2546F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FD7E09F6850257C850E4812057D742F /* LBSpeex */,
+				F134F95C16E7D8DCD3BC829C2B923370 /* Pods-OggSpeexDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C9653AD00EEEB94F1A42ADB350A849B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4895B1C632ACD8D87C14EAD05AEA19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		596B252C5F6C3B85ED2426A830913AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B8758E9D497FC2B4FE58C31562D7D3F /* Pods-OggSpeexDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CAECBA323980DA255D4AD55C66F5A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE692E67CC3FD6E4550D1DB3D86D63E /* AVAudioChannelLayout+SFBChannelLabels.m in Sources */,
+				1186177AAF776D3533E4A1029C6D7C46 /* AVAudioFormat+SFBFormatTransformation.m in Sources */,
+				9135B8EF11A89396E674A100E90F46EF /* AVAudioPCMBuffer+SFBBufferUtilities.m in Sources */,
+				9110CECD1EDB3093C634B897A86C5DAD /* LBPlayerManager.m in Sources */,
+				883A3667A7F33B4C9898BFF059496C71 /* LBSpeex-dummy.m in Sources */,
+				0F62AB489405C7A032DA305A331B5822 /* NSData+SFBExtensions.m in Sources */,
+				675216CC128C43E357DF3F3C34CBDAFC /* NSError+SFBURLPresentation.m in Sources */,
+				A7236BFB48C0D99FBFCF7A92DF25515F /* SFBAudioDecoder.m in Sources */,
+				BA71D35A3B68F4CCECB78E2E654205D5 /* SFBAudioPlayer.mm in Sources */,
+				7C88E7AE983F76E1C4E0FAA5223D8BFC /* SFBAudioPlayerNode.mm in Sources */,
+				58539EBF1D53AA516AA0B6242DEAD9F8 /* SFBAudioRingBuffer.cpp in Sources */,
+				8B7EFF1950917DAC41F9E8523F73B853 /* SFBCABufferList.cpp in Sources */,
+				AA4BDE516CA74CBCCA940E6DAFD26CE9 /* SFBCAChannelLayout.cpp in Sources */,
+				7DF7D0DC46CD01C01A4047BF0DB63A08 /* SFBCARingBuffer.cpp in Sources */,
+				B2C4505DC6C3BACFDDFB0C76210BC4CA /* SFBCAStreamBasicDescription.cpp in Sources */,
+				25BC24665F76BC7932D460909C726404 /* SFBDataInputSource.m in Sources */,
+				79315B639F977E718D41F0067B93289B /* SFBFileContentsInputSource.m in Sources */,
+				1F8EFAC89C15AA2A883C0B9924173C56 /* SFBFileInputSource.m in Sources */,
+				9CE2F283F1A17BC6DD87A10ECE28D0DE /* SFBInputSource.m in Sources */,
+				82E714DA25B7F9C79959B0A298B10D6D /* SFBMemoryMappedFileInputSource.m in Sources */,
+				E07C90B2C7CCFA01851BB0FF1651A1F6 /* SFBOggSpeexDecoder.m in Sources */,
+				36107A7411FA1B58D714EF123206BD97 /* SFBRingBuffer.cpp in Sources */,
+				A4C82F73D4C24A7BC9FD901E0864E583 /* SFBTimeUtilities.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46F563C842F8E7D3DFEF7BFCB669DD4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LBSpeex;
+			target = 3FD7E09F6850257C850E4812057D742F /* LBSpeex */;
+			targetProxy = E7141D41213F1A7979C979C5BC6E9C25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		376196D41FF8276960264006129EED16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B571E56D67E7E6CAF76C5796C888DC12 /* LBSpeex.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LBSpeex/LBSpeex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LBSpeex/LBSpeex-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LBSpeex/LBSpeex.modulemap";
+				PRODUCT_MODULE_NAME = LBSpeex;
+				PRODUCT_NAME = LBSpeex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A387E4B9D61AC95CA50CAA3003509A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F780D4953DDBF528253564E7BBA273 /* Pods-OggSpeexDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OggSpeexDemo/Pods-OggSpeexDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OggSpeexDemo/Pods-OggSpeexDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F92D5C4B10FA325EBF01E210EB04C7C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE5A8F06BFF69E49F9A7E4FA2939E87 /* Pods-OggSpeexDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OggSpeexDemo/Pods-OggSpeexDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OggSpeexDemo/Pods-OggSpeexDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC445A9FAD09506AD9F3E92642B08007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32014566D4FB5E36C0EDABE2EA2B3313 /* LBSpeex.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LBSpeex/LBSpeex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LBSpeex/LBSpeex-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LBSpeex/LBSpeex.modulemap";
+				PRODUCT_MODULE_NAME = LBSpeex;
+				PRODUCT_NAME = LBSpeex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CB13BB4B3A486453B8BD01B01E68B15 /* Build configuration list for PBXNativeTarget "Pods-OggSpeexDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A387E4B9D61AC95CA50CAA3003509A8 /* Debug */,
+				F92D5C4B10FA325EBF01E210EB04C7C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		341146165FE393B6038759156EC6B9C1 /* Build configuration list for PBXNativeTarget "LBSpeex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376196D41FF8276960264006129EED16 /* Debug */,
+				FC445A9FAD09506AD9F3E92642B08007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

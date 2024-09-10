@@ -1,0 +1,6 @@
+framework module LBSpeex {
+  umbrella header "LBSpeex-umbrella.h"
+
+  export *
+  module * { export * }
+}
