@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F134F95C16E7D8DCD3BC829C2B923370"
-               BuildableName = "Pods_OggSpeexDemo.framework"
+               BuildableName = "libPods-OggSpeexDemo.a"
                BlueprintName = "Pods-OggSpeexDemo"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E70C84C5F523E7E9C5CFC20 /* Pods_OggSpeexDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E62BADBBD33FA232649D4D /* Pods_OggSpeexDemo.framework */; };
 		94CBD24E2C8FE21200748EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBD24D2C8FE21200748EF8 /* AppDelegate.swift */; };
 		94CBD2502C8FE21200748EF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBD24F2C8FE21200748EF8 /* SceneDelegate.swift */; };
 		94CBD2522C8FE21200748EF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CBD2512C8FE21200748EF8 /* ViewController.swift */; };
@@ -15,6 +14,7 @@
 		94CBD2572C8FE21300748EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94CBD2562C8FE21300748EF8 /* Assets.xcassets */; };
 		94CBD25A2C8FE21300748EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CBD2582C8FE21300748EF8 /* LaunchScreen.storyboard */; };
 		94CBD2CE2C8FE63000748EF8 /* hello.spx in Resources */ = {isa = PBXBuildFile; fileRef = 94CBD2CD2C8FE62F00748EF8 /* hello.spx */; };
+		E695A32D6F2B542F3144921C /* libPods-OggSpeexDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9CA6EF876817225434FCC4 /* libPods-OggSpeexDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		94CBD2592C8FE21300748EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94CBD25B2C8FE21300748EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94CBD2CD2C8FE62F00748EF8 /* hello.spx */ = {isa = PBXFileReference; lastKnownFileType = file; path = hello.spx; sourceTree = "<group>"; };
-		C7E62BADBBD33FA232649D4D /* Pods_OggSpeexDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OggSpeexDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9CA6EF876817225434FCC4 /* libPods-OggSpeexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OggSpeexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E70C84C5F523E7E9C5CFC20 /* Pods_OggSpeexDemo.framework in Frameworks */,
+				E695A32D6F2B542F3144921C /* libPods-OggSpeexDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 		F22F4299D37E092C930FABA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C7E62BADBBD33FA232649D4D /* Pods_OggSpeexDemo.framework */,
+				DF9CA6EF876817225434FCC4 /* libPods-OggSpeexDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,7 +105,6 @@
 				94CBD2462C8FE21200748EF8 /* Sources */,
 				94CBD2472C8FE21200748EF8 /* Frameworks */,
 				94CBD2482C8FE21200748EF8 /* Resources */,
-				54778186D81B5522DA459F6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,23 +183,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		54778186D81B5522DA459F6A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OggSpeexDemo/Pods-OggSpeexDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OggSpeexDemo/Pods-OggSpeexDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OggSpeexDemo/Pods-OggSpeexDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -1,4 +1,4 @@
-framework module LBSpeex {
+module LBSpeex {
   umbrella header "LBSpeex-umbrella.h"
 
   export *
